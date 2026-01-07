@@ -25,7 +25,7 @@ function renderApplications() {
             <p>Phone: ${job.phone}</p>
             <p>Resume: ${job.resume || "Not uploaded"}</p>
             <p>Applied on: ${job.appliedAt}</p>
-            <p>Status: <span class="status">${job.status}</span></p>
+            
             <button onclick="withdraw(${index})" class="withdraw-btn">Withdraw</button>
         `;
         container.appendChild(div);
