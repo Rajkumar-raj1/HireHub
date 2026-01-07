@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="app-header">
+    <h2>Job Application</h2>
+</header>
+
+<div class="container apply-container">
+    <div class="job-info">
+        <h3 id="jobTitle"></h3>
+        <p id="jobCompany" class="company"></p>
+        <p id="jobLocation"></p>
+        <p id="jobExperience"></p>
+        <p id="jobSalary"></p>
+        <p id="jobDescription"></p>
+    </div>
+
+    <form id="applyForm" class="application-card">
+        <h3>Apply for this job</h3>
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="file" id="resume" required>
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+<script src="apply.js"></script>
+</body>
+</html>

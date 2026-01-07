@@ -1,0 +1,406 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================= BODY ================= */
+body {
+    min-height: 100vh;
+    background: #f4f6f8;
+    color: #1e293b;
+}
+
+/* ================= NAVBAR / HEADER ================= */
+header.app-header, header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #2563eb;
+    color: white;
+    flex-wrap: wrap;
+}
+
+header.app-header h2 {
+    font-size: 1.8rem;
+}
+
+nav.navbar a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+nav.navbar a:hover {
+    text-decoration: underline;
+    color: #fcd34d;
+}
+
+/* ================= LOGO ================= */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    padding: 0.2rem;
+    background: white;
+}
+
+.logo h2 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(to right, #2563eb, #1e40af);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* SEARCH BOX */
+.search-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-box input,
+ .search-box select { 
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+    
+}
+
+.search-box input:focus,
+.search-box select:focus {
+    outline: none;
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
+}
+
+
+
+.search-box input:hover,
+.search-box select:hover {
+    transform: translateY(-2px);
+}
+
+/* ================= CONTAINERS ================= */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ================= JOB CARDS ================= */
+.job-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.job-card h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.job-card p.job-meta {
+    margin: 6px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.job-card p {
+    margin: 8px 0;
+}
+
+.job-card button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.job-card button:hover:not(:disabled) {
+    background: #1e40af;
+    transform: translateY(-2px);
+}
+
+.job-card button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* ================= APPLICATION CARDS ================= */
+.application-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.application-card h3 {
+    margin-bottom: 8px;
+    color: #2563eb;
+}
+
+.application-card .company {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.application-card .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+}
+
+.application-card .status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #22c55e;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.application-card button {
+    margin-top: 12px;
+    background: #ef4444;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.application-card button:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+/* EMPTY STATE */
+.empty-msg {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    grid-column: 1 / -1;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ================= HELP SECTION ================= */
+.help-section {
+    background: #f8fafc;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.help-section h2 {
+    font-size: 32px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.help-subtitle {
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.help-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.help-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.help-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.help-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    header.app-header, nav.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .job-card, .application-card, .help-card {
+        padding: 16px;
+    }
+}
+/* ================= APPLY PAGE LAYOUT ================= */
+.apply-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Job Info Card */
+.job-info {
+    flex: 1 1 280px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.job-info h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.job-info p {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Adjust form size */
+.application-card {
+    flex: 1 1 280px;
+    padding: 25px;
+    gap: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .apply-container {
+        flex-direction: column;
+    }
+}
+/* ================= USER ACTIONS ================= */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-actions span {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Professional Logout Button */
+.user-actions button {
+    background: #ef4444;       /* Red for logout */
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.user-actions button:hover {
+    background: #dc2626;       /* Darker red on hover */
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .app-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .user-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+.user-actions button {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
