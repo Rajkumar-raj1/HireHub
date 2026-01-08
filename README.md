@@ -42,7 +42,13 @@ HireHub/
 ├── applications.js
 │
 ├── hirehub.png
-└── README.md
+├── README.md
+└── screenshots/
+    ├── home.png
+    ├── login.png
+    ├── register.png
+    ├── applyForJob.png
+    └── applications.png
 
 ---
 
@@ -50,37 +56,33 @@ HireHub/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Rajkumar-raj1/HireHub.git 
+   git clone https://github.com/Rajkumar-raj1/HireHub.git
+   ```
 2. Open the project folder.
 
 3. Open index.html in any modern web browser.
 
 No backend or database is required for running this project.
 
- ## 🎯 Purpose & Learning Outcomes
+## 🎯 Purpose & Learning Outcomes
 
 This project was developed to strengthen practical knowledge of front-end web development and understand how real-world web applications are structured.
 
 Through this project, I gained experience in:
 
 - Structuring multi-page web applications
-
 - Handling user authentication logic on the client side
-
 - Managing application data using JavaScript
-
 - Designing clean and user-friendly interfaces
-
 - Working with Git and GitHub for version control
 
 ## 🌐 Live Demo
 
-🔗 Live Website:
-https://rajkumar-raj1.github.io/HireHub/
+**Live Website:** [HireHub Live](https://rajkumar-raj1.github.io/HireHub/)  
+*(Hosted using GitHub Pages)*
 
-(Hosted using GitHub Pages)
 
-🧪 Sample Test Credentials (Optional but Professional)
+## 🧪 Sample Test Credentials
 
 Use the following sample credentials to test the application:
 
@@ -90,21 +92,12 @@ Password: 123456
 
 (You can also register a new account)
 
-📸 Screenshots (Optional but Highly Recommended)
-
-You can add screenshots of:
-
-Home Page
-
-Login Page
-
-Job Listings Page
-
-Apply Job Page
-
-Example format:
+## 📸 Screenshots
 ![Home Page](screenshots/home.png)
 ![Login Page](screenshots/login.png)
+![Register Page](screenshots/register.png)
+![Apply For Job Page](screenshots/applyForJob.png)
+![Applications Page](screenshots/applications.png)
 
 ## 🧑‍💻 Author
 
